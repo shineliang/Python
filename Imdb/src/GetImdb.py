@@ -9,7 +9,7 @@ def processLine(line):
     movie.parse()
     imdb = ImdbInfo(movie.name, movie.year)
     imdb.getInfo()
-    print '%s|%s|%s' % (line.strip(), imdb.rate, imdb.vote)
+    print '%s,%s,%s,%s' % (line.strip(), imdb.name, imdb.rate, imdb.vote)
 
 if __name__ == '__main__':
     fh = open('2.txt')
