@@ -104,10 +104,9 @@ class Discuz:
             self.count += 1
  
 if __name__ == '__main__':
-#    name = raw_input('username:').strip()
-#    password = getpass.getpass('password:').strip()
-    name='iori0402'
-    password='61338857'
+    name = raw_input('username:').strip()
+    password = getpass.getpass('password:').strip()
+    
     dz = Discuz(name, password,
     loginsubmiturl='http://www.5d5d.com/member.php?mod=logging&action=login',
     posturl='http://www.5d5d.com/forum.php?mod=post&action=newthread&fid=4&extra=&topicsubmit=yes',
